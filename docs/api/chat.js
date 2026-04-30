@@ -298,6 +298,7 @@ REGRAS:
 5. Sempre que possível, cite o nome do documento de origem.
 6. Não invente datas, valores, percentuais, cláusulas ou conclusões.
 7. Se houver ressalvas como vencimento antecipado, resgate antecipado, amortização extraordinária ou condições específicas, mencione brevemente.
+8. Não use Markdown. Não use asteriscos, negrito, títulos com #, listas com *, nem tabelas. Responda em texto simples.
 
 TRECHOS DOS DOCUMENTOS:
 ${contexto}`
