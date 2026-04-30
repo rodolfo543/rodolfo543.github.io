@@ -10,7 +10,7 @@ function carregarChunks() {
   return _chunks;
 }
 
-function buscar(pergunta, limite = 6) {
+function buscar(pergunta, limite = 3) {
   const chunks = carregarChunks();
   const stopwords = new Set(["de","da","do","das","dos","em","no","na","nos","nas",
     "e","a","o","as","os","um","uma","que","para","com","por","se","ou","ao","aos"]);
@@ -68,7 +68,7 @@ module.exports = async function handler(req, res) {
       },
       body: JSON.stringify({
         model: "llama-3.1-8b-instant",
-        max_tokens: 1024,
+        max_tokens: 500,
         temperature: 0.2,
         messages: [
           {
