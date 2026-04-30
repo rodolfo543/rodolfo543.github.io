@@ -5,7 +5,7 @@ const path = require("path");
 let _chunks = null;
 function carregarChunks() {
   if (_chunks) return _chunks;
-  const filePath = path.join(process.cwd(), "chunks.json");
+  const filePath = path.join(__dirname, "chunks.json");
   _chunks = JSON.parse(fs.readFileSync(filePath, "utf-8"));
   return _chunks;
 }
