@@ -280,7 +280,7 @@ module.exports = async function handler(req, res) {
         Accept: "application/json"
       },
       body: JSON.stringify({
-        model: "google/gemma-3-31b-it",
+        model: "google/gemma-4-31b-it",
         max_tokens: 900,
         temperature: 0.2,
         top_p: 0.7,
