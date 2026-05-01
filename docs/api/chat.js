@@ -231,7 +231,7 @@ function montarContexto(chunks) {
     return "Nenhum trecho relevante encontrado.";
   }
 
-  const MAX_CHARS_POR_CHUNK = 3000;
+  const MAX_CHARS_POR_CHUNK = 7000;
 
   return chunks
     .map(c => {
@@ -261,7 +261,7 @@ module.exports = async function handler(req, res) {
   let chunks = [];
 
   try {
-    chunks = buscar(pergunta, 8);
+    chunks = buscar(pergunta, 15);
   } catch (err) {
     console.error("Erro ao ler chunks.json:", err.message);
     return res.status(500).json({
@@ -298,7 +298,7 @@ Seu objetivo é ajudar o usuário a:
 
 REGRAS IMPORTANTES:
 
-1. Responda em português do Brasil, com linguagem clara, objetiva e fácil de entender.
+1. Responda em português do Brasil, com linguagem clara, objetiva e fácil de entender. Não precisa ser extremamente formal.
 
 2. Quando a pergunta for sobre dados específicos de uma operação, como valor, taxa, vencimento, garantia, cronograma, cláusula, fundo, amortização ou obrigação contratual, use os trechos recuperados dos documentos, e se não encontrar use seu conhecimento e dados na web sobre as operações, mas diga que é uma informação online.
 
