@@ -245,7 +245,7 @@
       </div>
 
       <div id="axs-chat-msgs">
-        <div class="axs-msg ia">Olá! Sou o assistente da AXS Energia. Faça perguntas sobre os contratos, aditamentos e documentos das emissões de dívida.</div>
+        <div class="axs-msg ia">Oie :) Sou o Assistente AXS. Posso ajudar com contratos, emissões de dívida e conceitos financeiros. Sou uma IA e posso cometer erros; para informações oficiais, acesse https://ri.axsenergia.com.br</div>
       </div>
 
       <div id="axs-chat-form">
